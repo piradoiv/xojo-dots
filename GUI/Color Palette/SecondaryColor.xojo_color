@@ -1,0 +1,8 @@
+#tag ColorGroup
+	CodeName=SecondaryColor
+	#tag Color
+		Type=0
+		Platform=3
+		Light=E86D0000
+	#tag EndColor
+#tag EndColorGroup
