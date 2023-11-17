@@ -1,9 +1,10 @@
 #tag WebPage
 Begin WebDialog ComposeWebDialog
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
-   Height          =   280
+   Height          =   246
    Index           =   -2147483648
    Indicator       =   0
    LayoutDirection =   0
@@ -22,38 +23,8 @@ Begin WebDialog ComposeWebDialog
    _mDesignHeight  =   0
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
-   Begin BigRoundButton CloseButton
-      BackgroundColor =   &c00000000
-      Caption         =   "x"
-      ControlID       =   ""
-      Enabled         =   True
-      Height          =   50
-      Index           =   -2147483648
-      Indicator       =   0
-      LayoutDirection =   0
-      LayoutType      =   0
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      PanelIndex      =   0
-      Scope           =   2
-      ScrollDirection =   0
-      TabIndex        =   0
-      TabStop         =   True
-      Tooltip         =   ""
-      Top             =   20
-      Visible         =   True
-      Width           =   50
-      _mDesignHeight  =   0
-      _mDesignWidth   =   0
-      _mPanelIndex    =   -1
-   End
    Begin ComposeContainer Compose
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
       Height          =   200
@@ -62,24 +33,51 @@ Begin WebDialog ComposeWebDialog
       LayoutDirection =   0
       LayoutType      =   0
       Left            =   0
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockHorizontal  =   False
       LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockRight       =   True
+      LockTop         =   False
       LockVertical    =   False
       Scope           =   2
       ScrollDirection =   0
       TabIndex        =   1
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   80
+      Top             =   46
       Visible         =   True
       Width           =   600
       _mDesignHeight  =   0
       _mDesignWidth   =   0
       _mPanelIndex    =   -1
+   End
+   Begin WebImageViewer ImageViewer1
+      ControlID       =   ""
+      DisplayMode     =   0
+      Enabled         =   True
+      Height          =   32
+      Image           =   0
+      Index           =   -2147483648
+      Indicator       =   ""
+      Left            =   548
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      SVGData         =   ""
+      TabIndex        =   2
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   20
+      URL             =   ""
+      Visible         =   True
+      Width           =   32
+      _mPanelIndex    =   -1
+      _ProtectImage   =   False
    End
 End
 #tag EndWebPage
@@ -94,13 +92,6 @@ End
 
 #tag EndWindowCode
 
-#tag Events CloseButton
-	#tag Event
-		Sub Pressed()
-		  Self.Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events Compose
 	#tag Event
 		Sub SendButtonPressed(message As String)
@@ -109,7 +100,28 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
+#tag Events ImageViewer1
+	#tag Event
+		Sub Opening()
+		  Me.Style.Cursor = WebStyle.Cursors.Pointer
+		  Me.Image = WebPicture.BootstrapIcon("x", Color.Black)
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Pressed(x As Integer, y As Integer)
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false

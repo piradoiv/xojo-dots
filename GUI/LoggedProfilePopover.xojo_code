@@ -1,10 +1,10 @@
 #tag WebContainerControl
-Begin WebContainer LoggedUserMenuButton
+Begin WebContainer LoggedProfilePopover
    Compatibility   =   ""
    ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
-   Height          =   65
+   Height          =   324
    Indicator       =   0
    LayoutDirection =   0
    LayoutType      =   0
@@ -19,135 +19,22 @@ Begin WebContainer LoggedUserMenuButton
    TabIndex        =   0
    Top             =   0
    Visible         =   True
-   Width           =   250
+   Width           =   300
    _mDesignHeight  =   0
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
-   Begin WebImageViewer AvatarImageViewer
-      ControlID       =   ""
-      DisplayMode     =   0
-      Enabled         =   True
-      Height          =   39
-      Image           =   0
-      Index           =   -2147483648
-      Indicator       =   ""
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   False
-      LockVertical    =   True
-      Scope           =   2
-      SVGData         =   ""
-      TabIndex        =   0
-      Tooltip         =   ""
-      Top             =   13
-      URL             =   ""
-      Visible         =   True
-      Width           =   39
-      _mPanelIndex    =   -1
-      _ProtectImage   =   False
-   End
-   Begin WebLabel FullNameLabel
-      Bold            =   True
+   Begin LoggedUserMenuButton LoggedUserMenuButton1
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
-      FontName        =   ""
-      FontSize        =   18.0
-      Height          =   38
-      Index           =   -2147483648
-      Indicator       =   ""
-      Italic          =   False
-      Left            =   67
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   False
-      LockVertical    =   True
-      Multiline       =   False
-      Scope           =   2
-      TabIndex        =   1
-      Text            =   "Full Name"
-      TextAlignment   =   0
-      TextColor       =   &c00000000
-      Tooltip         =   ""
-      Top             =   5
-      Underline       =   False
-      Visible         =   True
-      Width           =   139
-      _mPanelIndex    =   -1
-   End
-   Begin WebLabel HandleLabel
-      Bold            =   False
-      ControlID       =   ""
-      Enabled         =   True
-      FontName        =   ""
-      FontSize        =   14.0
-      Height          =   38
-      Index           =   -2147483648
-      Indicator       =   0
-      Italic          =   False
-      Left            =   67
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   False
-      LockVertical    =   True
-      Multiline       =   False
-      Scope           =   2
-      TabIndex        =   2
-      Text            =   "@user_handle"
-      TextAlignment   =   0
-      TextColor       =   &c3F3F3F00
-      Tooltip         =   ""
-      Top             =   23
-      Underline       =   False
-      Visible         =   True
-      Width           =   139
-      _mPanelIndex    =   -1
-   End
-   Begin WebImageViewer MoreImageViewer
-      ControlID       =   ""
-      DisplayMode     =   0
-      Enabled         =   True
-      Height          =   17
-      Image           =   0
-      Index           =   -2147483648
-      Indicator       =   0
-      Left            =   213
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   False
-      LockVertical    =   True
-      Scope           =   2
-      SVGData         =   ""
-      TabIndex        =   3
-      Tooltip         =   ""
-      Top             =   23
-      URL             =   ""
-      Visible         =   True
-      Width           =   17
-      _mPanelIndex    =   -1
-      _ProtectImage   =   False
-   End
-   Begin WebCanvas OverlayCanvas
-      ControlID       =   ""
-      DiffEngineDisabled=   False
-      Enabled         =   True
+      FullName        =   "Ricardo Cruz"
       Height          =   65
       Index           =   -2147483648
-      Indicator       =   ""
-      Left            =   0
-      LockBottom      =   True
+      Indicator       =   0
+      LayoutDirection =   0
+      LayoutType      =   0
+      Left            =   20
+      LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
       LockLeft        =   True
@@ -155,134 +42,183 @@ Begin WebContainer LoggedUserMenuButton
       LockTop         =   True
       LockVertical    =   False
       Scope           =   2
-      TabIndex        =   4
+      ScrollDirection =   0
+      TabIndex        =   0
+      TabStop         =   True
       Tooltip         =   ""
-      Top             =   0
+      Top             =   20
+      UserHandle      =   "piradoiv"
       Visible         =   True
-      Width           =   250
+      Width           =   260
+      _mDesignHeight  =   0
+      _mDesignWidth   =   0
+      _mPanelIndex    =   -1
+   End
+   Begin LoggedUserMenuButton LoggedUserMenuButton2
+      ControlCount    =   0
+      ControlID       =   ""
+      Enabled         =   True
+      FullName        =   "Container Course"
+      Height          =   65
+      Index           =   -2147483648
+      Indicator       =   0
+      LayoutDirection =   0
+      LayoutType      =   0
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   2
+      ScrollDirection =   0
+      TabIndex        =   1
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   93
+      UserHandle      =   "containercourse"
+      Visible         =   True
+      Width           =   260
+      _mDesignHeight  =   0
+      _mDesignWidth   =   0
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton Button1
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "Add an existing account"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   9
+      Left            =   20
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   False
+      LockVertical    =   False
+      Scope           =   2
+      TabIndex        =   3
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   174
+      Visible         =   True
+      Width           =   260
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton Button2
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "Manage accounts"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   9
+      Left            =   20
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   False
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   2
+      TabIndex        =   4
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   220
+      Visible         =   True
+      Width           =   260
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton Button3
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "Log out @piradoiv"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   9
+      Left            =   20
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   False
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   2
+      TabIndex        =   5
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   266
+      Visible         =   True
+      Width           =   260
       _mPanelIndex    =   -1
    End
 End
 #tag EndWebContainerControl
 
 #tag WindowCode
-	#tag Event
-		Sub Opening()
-		  Style.Value("border-radius") = "50px"
-		  Style.Value("position") = "fixed"
-		  Style.Value("left") = "initial"
-		  Style.BackgroundColor = Color.RGB(215, 215, 215, 255)
-		  
-		  Style.AddTransition("background-color", 0.1)
-		  
-		  ExecuteJavaScript("$('#" + Self.ControlID + "').addClass('dropup')")
-		  
-		  Var menu As New WebMenuItem
-		  menu.AddMenuItem("Add an existing account")
-		  menu.AddMenuItem("Manage accounts")
-		  menu.AddMenuItem("Log out @" + mUserHandle)
-		  ContextualMenu = menu
-		  
-		  Opening
-		End Sub
-	#tag EndEvent
-
-
-	#tag Hook, Flags = &h0
-		Event Opening()
-	#tag EndHook
-
-	#tag Hook, Flags = &h0
-		Event Pressed()
-	#tag EndHook
-
-
-	#tag ComputedProperty, Flags = &h0
-		#tag Getter
-			Get
-			  Return FullNameLabel.Text
-			End Get
-		#tag EndGetter
-		#tag Setter
-			Set
-			  FullNameLabel.Text = value
-			End Set
-		#tag EndSetter
-		FullName As String
-	#tag EndComputedProperty
-
-	#tag Property, Flags = &h21
-		Private mUserHandle As String
-	#tag EndProperty
-
-	#tag ComputedProperty, Flags = &h0
-		#tag Getter
-			Get
-			  Return AvatarImageViewer.Picture
-			End Get
-		#tag EndGetter
-		#tag Setter
-			Set
-			  AvatarImageViewer.Picture = value
-			End Set
-		#tag EndSetter
-		UserAvatar As WebPicture
-	#tag EndComputedProperty
-
-	#tag ComputedProperty, Flags = &h0
-		#tag Getter
-			Get
-			  Return mUserHandle
-			End Get
-		#tag EndGetter
-		#tag Setter
-			Set
-			  mUserHandle = value
-			  HandleLabel.Text = "@" + value
-			End Set
-		#tag EndSetter
-		UserHandle As String
-	#tag EndComputedProperty
-
-
-	#tag Constant, Name = kHoverJS, Type = String, Dynamic = False, Default = \"$(\'#{{controlID}}\').hover(function() {\n  $(\'#{{targetID}}\').css(\'backgroundColor\'\x2C \'rgb(215\x2C 215\x2C 215\x2C 1)\');\n}\x2C function() {\n  $(\'#{{targetID}}\').css(\'backgroundColor\'\x2C \'rgb(215\x2C 215\x2C 215\x2C 0)\');\n});", Scope = Private
-	#tag EndConstant
-
-
 #tag EndWindowCode
 
-#tag Events AvatarImageViewer
+#tag Events LoggedUserMenuButton1
 	#tag Event
-		Sub Opening()
-		  Me.Picture = WebPicture.BootstrapIcon("person-bounding-box", Color.LightGray)
+		Sub Pressed()
+		  Self.Close
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events MoreImageViewer
+#tag Events LoggedUserMenuButton2
 	#tag Event
-		Sub Opening()
-		  Me.Picture = WebPicture.BootstrapIcon("three-dots", Color.Black)
+		Sub Pressed()
+		  Self.Close
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events OverlayCanvas
+#tag Events Button1
 	#tag Event
-		Sub Opening()
-		  Me.Style.Cursor = WebStyle.Cursors.Pointer
-		  
-		  Var js As String = kHoverJS
-		  js = js.ReplaceAll("{{controlID}}", Me.ControlID)
-		  js = js.ReplaceAll("{{targetID}}", Self.ControlID)
-		  ExecuteJavaScript(js)
+		Sub Pressed()
+		  Self.Close
 		End Sub
 	#tag EndEvent
+#tag EndEvents
+#tag Events Button2
 	#tag Event
-		Sub Pressed(x As Integer, y As Integer)
-		  RaiseEvent Pressed
+		Sub Pressed()
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button3
+	#tag Event
+		Sub Pressed()
+		  Self.Close
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="_mPanelIndex"
+		Visible=false
+		Group="Behavior"
+		InitialValue="-1"
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
 		Visible=false
@@ -320,30 +256,6 @@ End
 		Visible=true
 		Group="Position"
 		InitialValue="0"
-		Type="Integer"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="Width"
-		Visible=false
-		Group="Position"
-		InitialValue="250"
-		Type="Integer"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="Height"
-		Visible=false
-		Group="Position"
-		InitialValue="250"
-		Type="Integer"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="_mPanelIndex"
-		Visible=false
-		Group="Behavior"
-		InitialValue="-1"
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
@@ -458,22 +370,6 @@ End
 		#tag EndEnumValues
 	#tag EndViewProperty
 	#tag ViewProperty
-		Name="FullName"
-		Visible=true
-		Group="Behavior"
-		InitialValue=""
-		Type="String"
-		EditorType="MultiLineEditor"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="UserHandle"
-		Visible=true
-		Group="Behavior"
-		InitialValue=""
-		Type="String"
-		EditorType="MultiLineEditor"
-	#tag EndViewProperty
-	#tag ViewProperty
 		Name="TabIndex"
 		Visible=true
 		Group="Visual Controls"
@@ -526,5 +422,21 @@ End
 			"2 - TopToBottom"
 			"3 - BottomToTop"
 		#tag EndEnumValues
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="Width"
+		Visible=false
+		Group=""
+		InitialValue="250"
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="Height"
+		Visible=false
+		Group=""
+		InitialValue="250"
+		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior

@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin WebContainer SearchBox
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   48
@@ -45,7 +46,6 @@ Begin WebContainer SearchBox
       ReadOnly        =   False
       Scope           =   2
       TabIndex        =   0
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -56,9 +56,10 @@ Begin WebContainer SearchBox
    End
    Begin WebImageViewer MagnifyIcon
       ControlID       =   ""
+      DisplayMode     =   0
       Enabled         =   True
       Height          =   18
-      HorizontalAlignment=   2
+      Image           =   0
       Index           =   -2147483648
       Indicator       =   ""
       Left            =   20
@@ -69,15 +70,12 @@ Begin WebContainer SearchBox
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Picture         =   0
       Scope           =   2
       SVGData         =   ""
       TabIndex        =   1
-      TabStop         =   True
       Tooltip         =   ""
       Top             =   15
       URL             =   ""
-      VerticalAlignment=   2
       Visible         =   True
       Width           =   18
       _mPanelIndex    =   -1
@@ -113,6 +111,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false

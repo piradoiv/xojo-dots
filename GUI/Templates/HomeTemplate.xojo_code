@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin WebContainer HomeTemplate
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   800
@@ -23,6 +24,7 @@ Begin WebContainer HomeTemplate
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
    Begin LeftSidebar SidebarLeft
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
       Height          =   560
@@ -50,6 +52,7 @@ Begin WebContainer HomeTemplate
       _mPanelIndex    =   -1
    End
    Begin LoggedUserMenuButton LoggedUserMenuButton1
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
       FullName        =   "John Doe"
@@ -79,6 +82,7 @@ Begin WebContainer HomeTemplate
       _mPanelIndex    =   -1
    End
    Begin HomeTimelineContainer HomeTimeline
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
       Height          =   800
@@ -106,6 +110,7 @@ Begin WebContainer HomeTemplate
       _mPanelIndex    =   -1
    End
    Begin RightSidebar SidebarRight
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
       Height          =   400
@@ -157,12 +162,26 @@ End
 #tag EndEvents
 #tag Events LoggedUserMenuButton1
 	#tag Event
-		Sub ContextualMenuSelected(hitItem as WebMenuItem)
+		Sub ContextualMenuSelected(hitItem As WebMenuItem)
 		  MessageBox("'" + hitItem.Value + "' has been pressed")
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Pressed()
+		  Var c As New LoggedProfilePopover
+		  c.ShowPopover(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false

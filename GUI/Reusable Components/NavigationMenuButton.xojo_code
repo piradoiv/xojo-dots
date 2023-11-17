@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin WebContainer NavigationMenuButton
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   50
@@ -47,9 +48,10 @@ Begin WebContainer NavigationMenuButton
    End
    Begin WebImageViewer IconViewer
       ControlID       =   ""
+      DisplayMode     =   0
       Enabled         =   True
       Height          =   26
-      HorizontalAlignment=   2
+      Image           =   0
       Index           =   -2147483648
       Indicator       =   ""
       Left            =   20
@@ -60,14 +62,12 @@ Begin WebContainer NavigationMenuButton
       LockRight       =   False
       LockTop         =   False
       LockVertical    =   True
-      Picture         =   0
       Scope           =   0
       SVGData         =   ""
       TabIndex        =   1
       Tooltip         =   ""
       Top             =   12
       URL             =   ""
-      VerticalAlignment=   2
       Visible         =   True
       Width           =   26
       _mPanelIndex    =   -1
@@ -224,7 +224,7 @@ End
 
 #tag Events BackgroundCanvas
 	#tag Event
-		Sub Paint(g as WebGraphics)
+		Sub Paint(g As WebGraphics)
 		  g.DrawingColor = Color.RGB(215, 215, 215)
 		  g.FillRoundRectangle(0, 0, CaptionLabel.Left + captionWidth + 20, g.Height, 25)
 		End Sub
@@ -238,7 +238,7 @@ End
 #tag EndEvents
 #tag Events OverlayCanvas
 	#tag Event
-		Sub Pressed(x as Integer, y as Integer)
+		Sub Pressed(x As Integer, y As Integer)
 		  Pressed
 		End Sub
 	#tag EndEvent
@@ -252,6 +252,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

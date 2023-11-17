@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin WebContainer ComposeContainer
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   200
@@ -24,9 +25,10 @@ Begin WebContainer ComposeContainer
    _mPanelIndex    =   -1
    Begin WebImageViewer AvatarImageViewer
       ControlID       =   ""
+      DisplayMode     =   0
       Enabled         =   True
       Height          =   39
-      HorizontalAlignment=   2
+      Image           =   0
       Index           =   -2147483648
       Indicator       =   0
       Left            =   20
@@ -37,14 +39,12 @@ Begin WebContainer ComposeContainer
       LockRight       =   False
       LockTop         =   False
       LockVertical    =   True
-      Picture         =   0
       Scope           =   2
       SVGData         =   ""
       TabIndex        =   0
       Tooltip         =   ""
       Top             =   20
       URL             =   ""
-      VerticalAlignment=   2
       Visible         =   True
       Width           =   39
       _mPanelIndex    =   -1
@@ -83,6 +83,7 @@ Begin WebContainer ComposeContainer
    Begin BigRoundButton SendButton
       BackgroundColor =   &c00000000
       Caption         =   "Send"
+      ControlCount    =   0
       ControlID       =   ""
       Enabled         =   False
       Height          =   38
@@ -187,6 +188,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false

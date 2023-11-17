@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin WebContainer BigRoundButton
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   50
@@ -199,7 +200,7 @@ End
 
 #tag Events OverlayCanvas
 	#tag Event
-		Sub Pressed(x as Integer, y as Integer)
+		Sub Pressed(x As Integer, y As Integer)
 		  If mEnabled Then
 		    Pressed
 		  End If
@@ -207,6 +208,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Enabled"
 		Visible=true
